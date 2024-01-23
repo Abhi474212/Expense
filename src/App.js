@@ -19,7 +19,7 @@ const App = () => {
   const [expenses, setExpenses] = useState([]);
   const [name, setName] = useState("");
   const [amount, setAmount] = useState("");
-  const [date, setDate] = useState(today);
+  const [date, setDate] = useState(today.toISOString().split('T')[0]);
   const [startDate, setStartDate] = useState(
     twentiethDay.toISOString().split("T")[0]
   );
