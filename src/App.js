@@ -95,7 +95,7 @@ const App = () => {
 
   const deleteExpense = (index) => {
     const isConfirmed = window.confirm(
-      "Are you sure you want to delete this expense?"
+      `Are you sure you want to delete this ${index}?`
     );
     if (isConfirmed) {
       const updatedExpenses = [...expenses];
